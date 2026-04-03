@@ -72,7 +72,6 @@ src/
 ### Installation & Running
 
 1. **Clone the repository:**
-
 git clone <repository-url>
 cd JWT-DEMO
 
@@ -87,7 +86,7 @@ The application will start on http://localhost:8083.
 - **API Endpoints**
 - **Authentication**
 - **Method	Endpoint	Description**
----
+
 - ✅ **POST**	/api/register	Register a new user with username & password
 - ✅ **POST**	/api/login	Login and receive JWT token
 - ✅ **GET**	/api/hello	Protected endpoint (requires JWT in header)
