@@ -84,14 +84,14 @@ mvn spring-boot:run
 
 The application will start on http://localhost:8083.
 
-**API Endpoints**
-**Authentication**
-**Method	Endpoint	Description**
+- **API Endpoints**
+- **Authentication**
+- **Method	Endpoint	Description**
 ---
--- **POST**	/api/register	Register a new user with username & password
--- **POST**	/api/login	Login and receive JWT token
--- **GET**	/api/hello	Protected endpoint (requires JWT in header)
--- **GET**	/api/users	Fetch all registered users (requires JWT)
+- ✅ **POST**	/api/register	Register a new user with username & password
+- ✅ **POST**	/api/login	Login and receive JWT token
+- ✅ **GET**	/api/hello	Protected endpoint (requires JWT in header)
+- ✅ **GET**	/api/users	Fetch all registered users (requires JWT)
 
 ## **Request Example for Registration:**
 
@@ -106,17 +106,17 @@ Authorization: Bearer <JWT_TOKEN>
 
 Update application.properties for your environment:
 
--- server.port=8083
--- spring.datasource.url=jdbc:mysql://localhost:3306/jwt_demo
--- spring.datasource.username=root
--- spring.datasource.password=root
--- jwt.secret=your-secret-key
--- jwt.expiration=3600000
--- Security
-Passwords are encrypted with bcrypt
--- JWT tokens are signed using a secret key
--- Protected endpoints require a valid JWT token in the Authorization header
--- Stateless authentication (SessionCreationPolicy.STATELESS)
+- ✅ server.port=8083
+- ✅ spring.datasource.url=jdbc:mysql://localhost:3306/jwt_demo
+- ✅ spring.datasource.username=root
+- ✅ spring.datasource.password=root
+- ✅ jwt.secret=your-secret-key
+- ✅ jwt.expiration=3600000
+- ✅ Security
+- ✅ Passwords are encrypted with bcrypt
+- ✅ JWT tokens are signed using a secret key
+- ✅ Protected endpoints require a valid JWT token in the Authorization header
+- ✅ Stateless authentication (SessionCreationPolicy.STATELESS)
 
 ### Screenshots
 
